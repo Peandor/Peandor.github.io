@@ -29,10 +29,10 @@ nav{
     text-transform: uppercase;
 }
 
-.main{
+.main {
     width: 100%;
-    height: calc(100%-60px);
-    background: url(../img/photo1.png) 90% 100% no-repeat ,url(../img/fon.png) center/cover no-repeat ;
+    height: 100%;
+    background: url(../img/photo1.png) 90% 100%/auto 85% no-repeat , url(../img/fon.png) center/cover no-repeat ;
 }
 
 .title__container{
@@ -64,3 +64,45 @@ nav{
     padding:  0px 16px;
     margin: 58px 14px 0px 14px;
 }
+
+.info__container {
+    font-family: Arial,sans-serif;
+    float: left;
+    margin: 100px 304px 0px 304px;  
+    color: #263244;
+   
+}
+.info__container h2{
+    font-size: 24px;
+    color: #263244;
+     text-align: center;
+    margin: 0px 0px 100px 0px;
+}
+.info__container p{
+    padding-top: 20px;
+}
+
+.info__container input{
+    margin: 20px 317px 20px 317px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding:  0px 16px;
+}
+
+.info__skills{
+     margin: 820px 317px 20px 317px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding:  0px 16px;
+}
+
