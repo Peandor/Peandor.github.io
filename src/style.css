@@ -32,12 +32,12 @@ nav{
 .main {
     width: 100%;
     height: 100%;
-    background: url(../img/photo1.png) 90% 100%/auto 85% no-repeat , url(../img/fon.png) center/cover no-repeat ;
+    background: url(../img/photo1.png) 100% 100%/auto 65% no-repeat , url(../img/fon.png) center/cover no-repeat ;
 }
 
 .title__container{
     float: left;
-    margin: 432px 0px 0px 404px;  
+    margin: 302px 0px 0px 404px;  
     color: #2c384a;
     text-align: center;
 }
@@ -66,10 +66,10 @@ nav{
 }
 
 .info__container {
-    font-family: Arial,sans-serif;
-    float: left;
-    margin: 100px 304px 0px 304px;  
-    color: #263244;
+   float: left;
+    margin: 102px 204px 0px 204px;  
+    color: #2c384a;
+    text-align: center;
    
 }
 .info__container h2{
@@ -78,13 +78,18 @@ nav{
      text-align: center;
     margin: 0px 0px 100px 0px;
 }
-.info__container p{
-    padding-top: 20px;
+.info__container img{
+    margin: 0px 200px 0px 200px;
+   
 }
+.info__container p{
+    padding: 20px;
+}
+
+
 
 .info__container input{
-    margin: 20px 317px 20px 317px;
-    height: 40px;
+   height: 40px;
     text-align: center;
     border: 2px solid #6d7682;
     background: none;
@@ -92,17 +97,263 @@ nav{
     color: #6d7682;
     font-size: 13px;
     padding:  0px 16px;
+    margin: 58px 14px 0px 14px;
+}
+.skills{
+    font-family: Arial,sans-serif;
+    float: left;
+    margin: 200px 100px 0px 0px;  
+    color: #263244;
 }
 
-.info__skills{
-     margin: 820px 317px 20px 317px;
+.info__skills h2{
+    padding: 100px 0px 0px 0px;
+    font-size: 24px;
+    color: #263244;
+     text-align: center;
+    margin: 0px 0px 100px 0px;
+}
+.info__skills li{
+    float: left;
+    line-height: 60px;
+    color: #cf7600;
+    margin-right: 60px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 55px;
+}
+.info__skills li p{
+    line-height: 10px;
+    color: #263244;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3px;
+}
+.skills{
+     width: 100%;
+    height: 100%;
+    background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.png) center/cover no-repeat;
+}
+.case{
+    width: 100%;
+    height: 100%;
+    background: url(../img/%D0%A4%D0%BE%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%81%D0%BB%D0%BE%D0%B9.png)
+        center/cover no-repeat;
+}
+.info__case{
+    float: left;
+    margin: 102px 104px 0px 104px;  
+    color: #2c384a;
+    text-align: center;
+}
+.info__case h3{
+    font-size: 24px;
+    color: #263244;
+     text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+.info__case img{
+    margin: 100px 100px 0px 0px;
+    
+}
+.info__case b{
+    text-align: center;
+
+}
+.info__case li{
+    float: left;
+    text-align: left;
+    padding-left: 100px;
+}
+.info__case li h4{
+    font-size: 17px;
+    color: #263244;
+     text-align: left; 
+}
+.li_d{
+   margin: 0px 0px 100px -100px;
+    text-align: center;
+}
+
+.info__case input{
+   background: #63b5ae;
     height: 40px;
     text-align: center;
-    border: 2px solid #6d7682;
-    background: none;
-    border-radius: 5px;
-    color: #6d7682;
+    border-radius: 5px;  
     font-size: 13px;
-    padding:  0px 16px;
+    color: #ffffff;
+    padding: 0px 30px;
 }
 
+.money{
+   font-family: Arial,sans-serif;
+    float: left;
+    margin: 100px 400px 0px 400px;  
+    color: #263244;
+}
+.sum__money{
+  float: left;
+    color: #2c384a;
+    text-align: center;
+}
+.sum__money h2{
+    font-size: 44px;
+    color: #263244;
+     text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+.sum__money h3{
+    font-size: 24px;
+    color: #263244;
+     text-align: left;
+    margin: 0px 0px 50px 0px;
+}
+.sum__money select{
+    float: left;
+    font-size: 14px;
+    color: #263244;
+    text-align: left;
+    margin: 0px 0px 50px 0px;
+    background: #eeeeee;
+    border-radius: 5px;
+    width: 500px;
+    height: 30px;
+}
+
+.all__money{
+    color: #1c2534;;
+    text-align: center;
+    
+}
+.all__money h5{
+    float: left;
+    font-size: 20px;
+    padding: 0px 230px 20px 0px; 
+}
+.all__money_2{
+    float: right;
+}
+.all__money_4{
+    float: right;
+    
+}
+.all__money h4{
+    font-size: 20px;
+}
+
+.stat{
+   width: 100%;
+    height: 100%;  
+ background:url(../img/%D1%84%D0%BE%D0%BD_%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0.png) 
+        100% 100%/auto 65% no-repeat;
+   float: left;
+    margin: 0px 0px 0px 0px;  
+    color: #2c384a;
+    text-align: center;
+}
+.stat h2{
+    font-weight: 800;
+    font-size: 24px;
+    color: #263244;
+     text-align: center;
+    margin: 250px 0px 50px 0px;
+}
+.stat li{
+    float: left;
+    line-height: 60px;
+    color: #cf7600;
+    margin-right: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 55px;
+    
+}
+.stat li p{
+    line-height: 20px;
+    color: #323e4f;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3px;
+    font-weight: 800;
+}
+.otz{
+    float: left;
+    margin: 102px 100px 0px 100px;  
+    color: #2c384a;
+    text-align: center;
+}
+.otz h2{
+    padding: 60px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.otz img{
+    padding: 40px;
+}
+.otz p{
+    padding: 20px;
+}
+
+.me_info{
+    width: 100%;
+    height: 100%;  
+background: url(../img/%D0%A4%D0%BE%D0%BD_%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.png)
+        100% 100%/auto 90% no-repeat;
+    font-family: Arial,sans-serif;
+    float: left;
+    margin: 0px 0px 0px 0px;  
+    color: #263244;
+}
+.me_info div{
+    color:#fff;
+    margin: 100px 400px 100px 400px;
+}
+.me_info h2{
+    font-size: 24px;
+    text-align: center;
+}
+.me_info li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 35px;
+    margin-left: 35px;
+}
+.me_info li p{
+    line-height: 20px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3px;
+    font-weight: 500;
+}
+
+.me_info h4{
+    font-size: 14px;
+    text-align: center;
+}
+.me_info input{
+    float: left;
+    margin: 30px 10px 30px 0px;
+    background: #d2d5dc;
+    width: 260px;
+    height: 30px;
+    border-radius: 5px;
+}
+.me_info textarea{
+    float: left;
+    width: 530px;
+    height: 100px;
+    background: #d2d5dc;
+    padding: 10px;
+    border-radius: 3px;
+}
