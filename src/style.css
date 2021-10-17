@@ -1,3 +1,72 @@
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
 body{
     font-family: Arial,sans-serif;
 }
@@ -5,6 +74,8 @@ nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
+    z-index: 100;
 }
 
 .logo{
@@ -14,8 +85,14 @@ nav{
     padding-left: 150px;
     padding-right: 288px;
     float: left;
+    -webkit- animation: comming 2s ease;
+    -0- animation: comming 2s ease;
+    animation: comming 2s ease;
 }
-
+main{
+    width: 100%;
+    height: 100%;
+}
 .menu{
     padding-left: 432px;
 }
@@ -27,6 +104,10 @@ nav{
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit- animation: topshift 0.4s ease forwards;
+    -0- animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
 
 .main {
@@ -40,6 +121,13 @@ nav{
     margin: 302px 0px 0px 404px;  
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit- animation: titlemove 1s ease forwards;
+    -0- animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit- animation-delay: 2s;
+    -0- animation-delay: 2s;
+    animation-delay: 2s;
 }
 
 .title__container h1{
@@ -70,6 +158,13 @@ nav{
     margin: 102px 204px 0px 204px;  
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit- animation:lowshift  3s ease forwards;
+    -0- animation:lowshift  3s ease forwards;
+    animation: lowshift 3s ease forwards;
+    -webkit- animation-delay: 2s;
+    -0- animation-delay: 2s;
+    animation-delay: 2s;
    
 }
 .info__container h2{
@@ -104,6 +199,13 @@ nav{
     float: left;
     margin: 200px 100px 0px 0px;  
     color: #263244;
+    opacity: 0;
+    -webkit- animation:lowshift  3s ease forwards;
+    -0- animation:lowshift  3s ease forwards;
+    animation: lowshift 3s ease forwards;
+    -webkit- animation-delay: 2s;
+    -0- animation-delay: 2s;
+    animation-delay: 2s;
 }
 
 .info__skills h2{
@@ -122,6 +224,9 @@ nav{
     text-transform: uppercase;
     text-align: center;
     padding: 55px;
+    -webkit- animation: lowshift 3s ease;
+    -0- animation: lowshift 3s ease;
+    animation: lowshift 3s ease;
 }
 .info__skills li p{
     line-height: 10px;
@@ -156,6 +261,13 @@ nav{
 }
 .info__case img{
     margin: 100px 100px 0px 0px;
+    opacity: 0;
+    -webkit- animation: caselemove 1s ease forwards;
+    -0- animation: caselemove 1s ease forwards;
+    animation: caselemove 1s ease forwards;
+    -webkit- animation-delay: 2s;
+    -0- animation-delay: 2s;
+    animation-delay: 2s;
     
 }
 .info__case b{
@@ -192,7 +304,9 @@ nav{
     float: left;
     margin: 100px 400px 0px 400px;  
     color: #263244;
+    
 }
+
 .sum__money{
   float: left;
     color: #2c384a;
@@ -220,6 +334,7 @@ nav{
     border-radius: 5px;
     width: 500px;
     height: 30px;
+    
 }
 
 .all__money{
@@ -248,27 +363,27 @@ nav{
     height: 100%;  
  background:url(../img/%D1%84%D0%BE%D0%BD_%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0.png) 
         100% 100%/auto 65% no-repeat;
-   float: left;
-    margin: 0px 0px 0px 0px;  
+    background-attachment: fixed;
+    display: flex;
     color: #2c384a;
     text-align: center;
+    
+    
 }
 .stat h2{
-    font-weight: 800;
-    font-size: 24px;
+   
+    font-size: 44px;
+    font-weight: 600;
     color: #263244;
      text-align: center;
-    margin: 250px 0px 50px 0px;
+    margin: 100px -300px 50px 400px;
+}
+.stat ul{
+   margin: 300px 100px 100px -400px;
 }
 .stat li{
-    float: left;
-    line-height: 60px;
-    color: #cf7600;
-    margin-right: 50px;
-    font-size: 16px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 55px;
+    padding: 30px;
+   float: left;
     
 }
 .stat li p{
@@ -279,6 +394,7 @@ nav{
     text-align: center;
     padding: 3px;
     font-weight: 800;
+    
 }
 .otz{
     float: left;
@@ -356,4 +472,156 @@ background: url(../img/%D0%A4%D0%BE%D0%BD_%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D
     background: #d2d5dc;
     padding: 10px;
     border-radius: 3px;
+}
+.menu li a{
+    transition: all 0.4s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+.menu li a{
+    color: white;
+}
+
+.menu li a:hover{
+    color: #f18900;
+    
+}
+.menu li a:active{
+    transform: scale(1.1);
+}
+
+.title__container input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.title__container input:hover{
+    background: #344051;
+    color: white;
+}
+.title__container input:active{
+    transform: scale(1.1);
+}
+
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px; 
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@keyframes lowshift{
+    from{
+        opacity: 0;
+        margin-bottom: -80px; 
+    }
+    to{
+        opacity: 1;
+        margin-bottom: 0px;
+    }
+}
+
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+@keyframes caselemove{
+    from{
+        opacity: 0;
+        margin-left: -450px; 
+    }
+    to{
+        opacity: 1;
+        margin-left: 54px;
+    }
+}
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -450px; 
+    }
+    to{
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+@keyframes moneylemove{
+    from{
+        opacity: 0;
+        margin-right: -400px; 
+    }
+    to{
+        opacity: 1;
+        margin-right: 400px;
+    }
+}
+.info__container input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.info__container input:hover{
+    background: #344051;
+    color: white;
+}
+.info__container input:active{
+    transform: scale(1.1);
+}
+.info__case input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.info__case input:hover{
+    background: #ff9100;
+    color: white;
+}
+.info__case input:active{
+    transform: scale(1.1);
+}
+.sum__money select:focus{
+    border: 2px solid #16f5e2;
+    background: white;
+    color: white;
+}
+.info__case a:active{
+    color: aqua;
+}
+.info__case a:hover{
+    color:blue;
+}
+.box:focus{
+    border: 2px solid blue;
+    background: #fcf9f9;
+}
+.no_box{
+    transition: all 0.2s;
+    transform: scale(1)
+}
+.no_box:hover{
+    background: #344051;
+    color: white;
+}
+.no_box:active{
+    transform: scale(1.1);
 }
