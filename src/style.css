@@ -219,11 +219,11 @@ main{
     float: left;
     line-height: 60px;
     color: #cf7600;
-    margin-right: 60px;
+    margin-right: 100px;
     font-size: 16px;
     text-transform: uppercase;
     text-align: center;
-    padding: 55px;
+    padding: 25px;
     -webkit- animation: lowshift 3s ease;
     -0- animation: lowshift 3s ease;
     animation: lowshift 3s ease;
