@@ -197,7 +197,6 @@ main{
 }
 .skills{
     font-family: Arial,sans-serif;
-    float: left;
     margin: 200px 100px 0px 0px;  
     color: #263244;
     opacity: 0;
@@ -385,7 +384,7 @@ main{
     margin: 100px 0px 0px 0px;
 }
 .stat ul{
-  /**/ margin: 300px 0px 100px 0px;
+  /**/ margin: 200px 0px 0px 0px;
 }
 .stat li{
     padding: 0px;
