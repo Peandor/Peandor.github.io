@@ -259,13 +259,13 @@ main{
 }
 .info__case img{
     margin-top: 20px;
-    opacity: 0;
+   /* opacity: 0;
     -webkit- animation: caselemove 1s ease forwards;
     -0- animation: caselemove 1s ease forwards;
     animation: caselemove 1s ease forwards;
     -webkit- animation-delay: 2s;
     -0- animation-delay: 2s;
-    animation-delay: 2s;
+    animation-delay: 2s;*/
     
 }
 .info__case b{
