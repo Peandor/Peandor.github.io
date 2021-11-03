@@ -237,7 +237,6 @@ main{
 }
 .skills{
      width: 100%;
-    height: 100%;
     background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.png) center/cover no-repeat;
 }
 .case{
@@ -248,7 +247,7 @@ main{
 }
 .info__case{
     float: left;
-    margin: 102px 104px 0px 0px;  
+    margin: 102px 0px 0px 0px;  
     color: #2c384a;
     text-align: center;
 }
@@ -259,7 +258,7 @@ main{
     margin: 0px 0px 50px 0px;
 }
 .info__case img{
-    margin: 100px 100px 0px 0px;
+    margin-top: 20px;
     opacity: 0;
     -webkit- animation: caselemove 1s ease forwards;
     -0- animation: caselemove 1s ease forwards;
@@ -284,8 +283,9 @@ main{
      text-align: left; 
 }
 .li_d{
-   margin: 0px 0px 100px -100px;
-    text-align: center;
+   margin: 0px 0px 100px 0px;
+    text-align: left;
+    float: left;
 }
 
 .info__case input{
@@ -364,10 +364,9 @@ main{
 }
 
 .stat{
-   width: 100%;
-    height: 100%;  
+   width: 100%;  
  background:url(../img/%D1%84%D0%BE%D0%BD_%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0.png) 
-        100% 100%/auto 65% no-repeat;
+        50% 100%/auto 65% no-repeat;
     background-attachment: fixed;
     display: flex;
     color: #2c384a;
@@ -384,7 +383,7 @@ main{
     margin: 100px 0px 0px 0px;
 }
 .stat ul{
-  /**/ margin: 200px 0px 0px 0px;
+  /**/ margin: 150px 0px 150px 0px;
 }
 .stat li{
     padding: 0px;
@@ -421,7 +420,7 @@ main{
 
 .me_info{
     width: 100%;
-    height: 100%;  
+  
     background: url(../img/%D0%A4%D0%BE%D0%BD_%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.png)
         center/cover no-repeat;
     font-family: Arial,sans-serif;
@@ -429,6 +428,7 @@ main{
 }
 
 .me_info h2{
+    margin-top: 20px;
     font-size: 24px;
     text-align: center;
     color: #fff;
