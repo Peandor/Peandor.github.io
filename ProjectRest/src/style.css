@@ -341,6 +341,9 @@ main{
     height: 40px;
     
 }
+.sum__money option{
+    color: #263244;
+}
 
 .all__money{
     color: #1c2534;;

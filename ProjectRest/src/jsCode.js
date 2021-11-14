@@ -55,3 +55,134 @@ var money=0;
 }
 
 alert(calculator());
+
+function calculator1(){
+//let a1=" ";
+    array1 = ["Пункт-1","Пункт-2","Пункт-3"];
+    array2 = ["Пункт-1","Пункт-2","Пункт-3"];
+    array3 = ["Пункт-1","Пункт-2","Пункт-3"];
+    
+var b1=0;    
+var money=0;
+    if($('#se1').text=="Пункт-1"){
+        //a1=a1+" "+array1[0];
+        money=money+2000;
+        b1+=2;
+    }
+    if($('#se1').text=="Пункт-2"){
+       // a1=a1+" "+array1[1];
+        money=money+3000;
+         b1+=3;
+    }
+    if($('#se1').text=="Пункт-3"){
+      // a1=a1+" "+array1[2];
+        money=money+1000;
+         b1+=1;
+    }
+    
+    if($('#se2').text=="Пункт-1"){
+       //a1=a1+" "+array2[0];
+        money=money+2000;
+         b1+=2;
+    }
+    if($('#se2').text=="Пункт-2"){
+       //a1=a1+" "+array2[1];
+        money=money+1000;
+         b1+=3;
+    }
+    
+    if($('#se2').text=="Пункт-3"){
+       //a1=a1+" "+array2[1];
+        money=money+1000;
+         b1+=3;
+    }
+    
+    if($('#se3').text=="Пункт-1"){
+       // a1=a1+" "+array3[0];
+         money=money+3000;
+          b1+=2;
+    }
+    if($('#se3').text=="Пункт-2"){
+       // a1=a1+" "+array3[0];
+         money=money+3000;
+          b1+=2;
+    }
+    if($('#se3').text=="Пункт-3"){
+       // a1=a1+" "+array3[0];
+         money=money+3000;
+          b1+=2;
+    }
+    
+    money=money+", сроки: "+b1+" дней";
+    return money;   
+}
+
+function calculator2(){
+//let a1=" ";
+    array1 = ["Пункт-1","Пункт-2","Пункт-3"];
+    array2 = ["Пункт-1","Пункт-2","Пункт-3"];
+    array3 = ["Пункт-1","Пункт-2","Пункт-3"];
+    
+var b1=0;    
+var money=0;
+    if($('#se1').text=="Пункт-1"){
+        //a1=a1+" "+array1[0];
+        money=money+2000;
+        b1+=2;
+    }
+    if($('#se1').text=="Пункт-2"){
+       // a1=a1+" "+array1[1];
+        money=money+3000;
+         b1+=3;
+    }
+    if($('#se1').text=="Пункт-3"){
+      // a1=a1+" "+array1[2];
+        money=money+1000;
+         b1+=1;
+    }
+    
+    if($('#se2').text=="Пункт-1"){
+       //a1=a1+" "+array2[0];
+        money=money+2000;
+         b1+=2;
+    }
+    if($('#se2').text=="Пункт-2"){
+       //a1=a1+" "+array2[1];
+        money=money+1000;
+         b1+=3;
+    }
+    
+    if($('#se2').text=="Пункт-3"){
+       //a1=a1+" "+array2[1];
+        money=money+1000;
+         b1+=3;
+    }
+    
+    if($('#se3').text=="Пункт-1"){
+       // a1=a1+" "+array3[0];
+         money=money+3000;
+          b1+=2;
+    }
+    if($('#se3').text=="Пункт-2"){
+       // a1=a1+" "+array3[0];
+         money=money+3000;
+          b1+=2;
+    }
+    if($('#se3').text=="Пункт-3"){
+       // a1=a1+" "+array3[0];
+         money=money+3000;
+          b1+=2;
+    }
+    
+    b1=b1+" дней";
+    return b1;   
+}
+
+$('#se1').click( 
+    $('#srok').text=calculator1().text;
+    
+    $('#summa').text="";
+    $('#summa').text=calculator2();
+   
+
+
