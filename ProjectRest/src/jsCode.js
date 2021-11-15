@@ -4,7 +4,7 @@ var b = prompt("Дизайн 0- Классический , 1- Индивидуа
 
 var c = prompt("Адаптивность 0- Адаптивный, 1-Не адаптивный");
 
-function calculator(){
+/*function calculator(){
 let a1=" ";
     array1 = ["корпоративный","интернет-магазин","визитка"];
     array2 = ["Классический","Индивидуальный"];
@@ -52,19 +52,19 @@ var money=0;
     
     money=money+a1+", сроки: "+b1+" дней";
     return money;   
-}
+}*/
 
-alert(calculator());
+//alert(calculator());
 
 function calculator1(){
 //let a1=" ";
-    array1 = ["Пункт-1","Пункт-2","Пункт-3"];
-    array2 = ["Пункт-1","Пункт-2","Пункт-3"];
-    array3 = ["Пункт-1","Пункт-2","Пункт-3"];
+ //   array1 = ["Пункт-1","Пункт-2","Пункт-3"];
+  //  array2 = ["Пункт-1","Пункт-2","Пункт-3"];
+  //  array3 = ["Пункт-1","Пункт-2","Пункт-3"];
     
 var b1=0;    
 var money=0;
-    if($('#se1').text=="Пункт-1"){
+    if($('#se1').option=="Пункт-1"){
         //a1=a1+" "+array1[0];
         money=money+2000;
         b1+=2;
@@ -114,14 +114,14 @@ var money=0;
     }
     
     money=money+", сроки: "+b1+" дней";
-    return money;   
+    $('#srok').text=money.toString();   
 }
 
 function calculator2(){
 //let a1=" ";
-    array1 = ["Пункт-1","Пункт-2","Пункт-3"];
-    array2 = ["Пункт-1","Пункт-2","Пункт-3"];
-    array3 = ["Пункт-1","Пункт-2","Пункт-3"];
+   // array1 = ["Пункт-1","Пункт-2","Пункт-3"];
+  //  array2 = ["Пункт-1","Пункт-2","Пункт-3"];
+  //  array3 = ["Пункт-1","Пункт-2","Пункт-3"];
     
 var b1=0;    
 var money=0;
@@ -175,14 +175,23 @@ var money=0;
     }
     
     b1=b1+" дней";
-    return b1;   
+    $('#summa').text=b1.toString();
 }
 
-$('#se1').click( 
-    $('#srok').text=calculator1().text;
+$('#se1').on("change",calculator1);
     
-    $('#summa').text="";
-    $('#summa').text=calculator2();
+//calculator1();
+
+//    calculator2();
+    
+  //  $('#srok').text=calculator1().text;
+    
+ //   $('#summa').text="";
+    
+  //  $('#summa').text=calculator2().text;
+ 
+    
+
    
 
 
